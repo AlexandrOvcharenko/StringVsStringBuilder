@@ -14,7 +14,7 @@ public static class Recorder {
 		GC.Collect();
 
 		bytesPhysicalBefore = GetCurrentProcess().WorkingSet64;
-		bytesPhysicalBefore = GetCurrentProcess().VirtualMemorySize64;
+		bytesVirtualBefore = GetCurrentProcess().VirtualMemorySize64;
 
 		timer.Restart();
 	}
